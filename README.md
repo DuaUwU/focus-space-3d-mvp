@@ -42,4 +42,6 @@ npm run preview
 Start with Medium quality. Use Low on integrated GPUs or mobile devices. The 3D room uses simple geometry and a limited number of meshes; for production, merge static geometry, instance repeated props, bake static lighting, and profile draw calls on target devices.
 
 ## Deployment
-Build with `npm run build`. Deploy the generated `dist/` directory to Cloudflare Pages or GitHub Pages. For GitHub Pages under a repository subpath, configure Vite's `base` option accordingly.
+GitHub Pages deploys automatically from the `main` branch through `.github/workflows/pages.yml`. Set the repository's Pages source to **GitHub Actions**. The build uses the `/focus-space-3d-mvp/` repository path.
+
+For other hosts, run `npm run build` and deploy the generated `dist/` directory.
